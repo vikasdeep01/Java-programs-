@@ -1,14 +1,24 @@
 import java.util.Scanner;
 class input
 {
-    public static void main(String a[])
+    public static void main(String st[])
     {
        Scanner enter=new Scanner(System.in);
 
-       int x;
-       System.out.println("Enter the no. of elements");
-       x=enter.nextInt();
-       System.out.println("Your entered value is "+ x +"   hai");
+       int i,j;
+       System.out.print("Please enter the no. of rows:");
+       int a=enter.nextInt();
+       System.out.print("Please enter the no. of column:");
+       int b=enter.nextInt();
+       for(i=1;i<=a;i++)
+       {
+        for(j=1;j<=b;j++)
+        {
+            System.out.print(" *");
+        }
+        System.out.print("\n");
+       }
+      
 
        
     }
